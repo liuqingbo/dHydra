@@ -40,6 +40,8 @@ class Sina(Vendor):
     def __init__(self, username=None, pwd=None, **kwargs):
         super().__init__(**kwargs)
         config = util.read_config(os.getcwd() + "/sina.json")
+        username = "18616092786"
+        pwd="dennis_liu"
         if (username is None):
             if "username" in config.keys():
                 self.username = config["username"]
